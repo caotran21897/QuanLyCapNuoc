@@ -43,6 +43,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,12 +53,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="EF\CapThoatNuoc.cs" />
+    <Compile Include="EF\ChiSo.cs" />
+    <Compile Include="EF\ChucVu.cs" />
+    <Compile Include="EF\DongHo.cs" />
+    <Compile Include="EF\HoaDon.cs" />
+    <Compile Include="EF\KhachHang.cs" />
+    <Compile Include="EF\KhuVuc.cs" />
+    <Compile Include="EF\KyGhi.cs" />
+    <Compile Include="EF\KyThu.cs" />
+    <Compile Include="EF\LoaiKhachHang.cs" />
+    <Compile Include="EF\LoTrinh.cs" />
+    <Compile Include="EF\NganHang.cs" />
+    <Compile Include="EF\NhanVien.cs" />
+    <Compile Include="EF\Phuong.cs" />
+    <Compile Include="EF\Quan.cs" />
+    <Compile Include="EF\Tinh.cs" />
+    <Compile Include="EF\VaiTro.cs" />
+    <Compile Include="EF\VT_CV.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DAO\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
