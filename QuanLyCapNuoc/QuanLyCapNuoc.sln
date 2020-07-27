@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyCapNuoc", "QuanLyCapNuoc\QuanLyCapNuoc.csproj", "{A697502B-9B5E-4F0C-A732-3455B249AA08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{D61E5A76-970C-4CFA-90B1-A2631FAD8B7B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{BF6F8095-C132-464C-A387-F2533FC458FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{A697502B-9B5E-4F0C-A732-3455B249AA08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A697502B-9B5E-4F0C-A732-3455B249AA08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A697502B-9B5E-4F0C-A732-3455B249AA08}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D61E5A76-970C-4CFA-90B1-A2631FAD8B7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D61E5A76-970C-4CFA-90B1-A2631FAD8B7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D61E5A76-970C-4CFA-90B1-A2631FAD8B7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D61E5A76-970C-4CFA-90B1-A2631FAD8B7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF6F8095-C132-464C-A387-F2533FC458FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF6F8095-C132-464C-A387-F2533FC458FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF6F8095-C132-464C-A387-F2533FC458FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF6F8095-C132-464C-A387-F2533FC458FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

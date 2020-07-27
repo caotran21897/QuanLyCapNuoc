@@ -4,11 +4,11 @@ namespace Model.EF
     using System.Data.Entity;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
+    //using SqlProviderServices = System.Data.Entity.SqlServer.SqlProviderServices;
 
     public partial class CapThoatNuoc : DbContext
     {
-        public CapThoatNuoc()
-            : base("name=CapThoatNuoc")
+        public CapThoatNuoc() : base("name=CapThoatNuoc")
         {
         }
 
