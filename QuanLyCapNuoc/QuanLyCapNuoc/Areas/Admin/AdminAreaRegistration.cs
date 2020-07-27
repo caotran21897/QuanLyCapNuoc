@@ -17,8 +17,7 @@ namespace QuanLyCapNuoc.Areas.Admin
             context.MapRoute(
                 "Admin_default",
                 "Admin/{controller}/{action}/{id}",
-                new {action = "Index", id = UrlParameter.Optional },
-                new[] { "QuanLyCapNuoc.Areas.Admin.Controllers" }
+                new { action = "Index", id = UrlParameter.Optional }
             );
         }
     }

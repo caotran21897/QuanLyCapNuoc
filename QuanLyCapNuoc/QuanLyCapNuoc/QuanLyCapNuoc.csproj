@@ -129,52 +129,25 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
+    <Compile Include="Areas\Admin\Data\LoginModel.cs" />
+    <Compile Include="common\CommonConstants.cs" />
+    <Compile Include="common\Encrypter.cs" />
+    <Compile Include="common\UserLogin.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\Admin\dist\401.html" />
-    <Content Include="Assets\Admin\dist\404.html" />
-    <Content Include="Assets\Admin\dist\500.html" />
-    <Content Include="Assets\Admin\dist\assets\demo\chart-area-demo.js" />
-    <Content Include="Assets\Admin\dist\assets\demo\chart-bar-demo.js" />
-    <Content Include="Assets\Admin\dist\assets\demo\chart-pie-demo.js" />
-    <Content Include="Assets\Admin\dist\assets\demo\datatables-demo.js" />
-    <Content Include="Assets\Admin\dist\assets\img\error-404-monochrome.svg" />
-    <Content Include="Assets\Admin\dist\charts.html" />
-    <Content Include="Assets\Admin\dist\css\styles.css" />
-    <Content Include="Assets\Admin\dist\footer.html" />
-    <Content Include="Assets\Admin\dist\index.html" />
-    <Content Include="Assets\Admin\dist\js\scripts.js" />
-    <Content Include="Assets\Admin\dist\layout-sidenav-light.html" />
-    <Content Include="Assets\Admin\dist\layout-static.html" />
-    <Content Include="Assets\Admin\dist\login.html" />
-    <Content Include="Assets\Admin\dist\password.html" />
-    <Content Include="Assets\Admin\dist\register.html" />
-    <Content Include="Assets\Admin\dist\script.html" />
-    <Content Include="Assets\Admin\dist\tables.html" />
-    <Content Include="Assets\Admin\scripts\build-assets.js" />
-    <Content Include="Assets\Admin\scripts\build-pug.js" />
-    <Content Include="Assets\Admin\scripts\build-scripts.js" />
-    <Content Include="Assets\Admin\scripts\build-scss.js" />
-    <Content Include="Assets\Admin\scripts\clean.js" />
-    <Content Include="Assets\Admin\scripts\render-assets.js" />
-    <Content Include="Assets\Admin\scripts\render-pug.js" />
-    <Content Include="Assets\Admin\scripts\render-scripts.js" />
-    <Content Include="Assets\Admin\scripts\render-scss.js" />
-    <Content Include="Assets\Admin\scripts\sb-watch.js" />
-    <Content Include="Assets\Admin\scripts\start-debug.js" />
-    <Content Include="Assets\Admin\scripts\start.js" />
-    <Content Include="Assets\Admin\src\assets\demo\chart-area-demo.js" />
-    <Content Include="Assets\Admin\src\assets\demo\chart-bar-demo.js" />
-    <Content Include="Assets\Admin\src\assets\demo\chart-pie-demo.js" />
-    <Content Include="Assets\Admin\src\assets\demo\datatables-demo.js" />
-    <Content Include="Assets\Admin\src\assets\img\error-404-monochrome.svg" />
-    <Content Include="Assets\Admin\src\js\scripts.js" />
+    <Content Include="Assets\Admin\css\styles.css" />
+    <Content Include="Assets\Admin\demo\chart-area-demo.js" />
+    <Content Include="Assets\Admin\demo\chart-bar-demo.js" />
+    <Content Include="Assets\Admin\demo\chart-pie-demo.js" />
+    <Content Include="Assets\Admin\demo\datatables-demo.js" />
+    <Content Include="Assets\Admin\img\error-404-monochrome.svg" />
+    <Content Include="Assets\Admin\js\scripts.js" />
     <Content Include="Assets\Client\App_Themes\assets\css\app.css" />
     <Content Include="Assets\Client\App_Themes\assets\css\blocks.css" />
     <Content Include="Assets\Client\App_Themes\assets\css\custom.css" />
@@ -261,8 +234,6 @@
     <Content Include="Assets\Client\App_Themes\assets\plugins\jquery\jquery-migrate.min.js" />
     <Content Include="Assets\Client\App_Themes\assets\plugins\jquery\jquery.min.js" />
     <Content Include="Assets\Client\App_Themes\assets\plugins\line-icons\line-icons.css" />
-    <Content Include="Assets\Client\App_Themes\assets\plugins\OwlCarousel\.gitattributes" />
-    <Content Include="Assets\Client\App_Themes\assets\plugins\OwlCarousel\.gitignore" />
     <Content Include="Assets\Client\App_Themes\assets\plugins\OwlCarousel\dist\assets\ajax-loader.gif" />
     <Content Include="Assets\Client\App_Themes\assets\plugins\OwlCarousel\dist\assets\owl.carousel.css" />
     <Content Include="Assets\Client\App_Themes\assets\plugins\OwlCarousel\dist\assets\owl.carousel.min.css" />
@@ -397,64 +368,20 @@
     <Content Include="Assets\Client\Images\icon\icon6-Thanhtoan.png" />
     <Content Include="Assets\Client\Images\logo.png" />
     <Content Include="Assets\Client\Images\phone.gif" />
-    <Content Include="Content\bootstrap-theme.css" />
-    <Content Include="Content\bootstrap-theme.min.css" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\Admin\Views\web.config" />
-    <Content Include="Assets\Admin\src\pug\layouts\authentication.pug" />
-    <Content Include="Assets\Admin\src\pug\layouts\dashboard.pug" />
-    <Content Include="Assets\Admin\src\pug\layouts\error.pug" />
-    <Content Include="Assets\Admin\src\pug\layouts\includes\footer.pug" />
-    <Content Include="Assets\Admin\src\pug\layouts\includes\head\css.pug" />
-    <Content Include="Assets\Admin\src\pug\layouts\includes\head\icons.pug" />
-    <Content Include="Assets\Admin\src\pug\layouts\includes\head\meta.pug" />
-    <Content Include="Assets\Admin\src\pug\layouts\includes\head\title.pug" />
-    <Content Include="Assets\Admin\src\pug\layouts\includes\navigation\sidenav.pug" />
-    <Content Include="Assets\Admin\src\pug\layouts\includes\navigation\topnav.pug" />
-    <Content Include="Assets\Admin\src\pug\layouts\includes\scripts.pug" />
-    <Content Include="Assets\Admin\src\pug\pages\401.pug" />
-    <Content Include="Assets\Admin\src\pug\pages\404.pug" />
-    <Content Include="Assets\Admin\src\pug\pages\500.pug" />
-    <Content Include="Assets\Admin\src\pug\pages\charts.pug" />
-    <Content Include="Assets\Admin\src\pug\pages\includes\datatable.pug" />
-    <Content Include="Assets\Admin\src\pug\pages\includes\page-header.pug" />
-    <Content Include="Assets\Admin\src\pug\pages\index.pug" />
-    <Content Include="Assets\Admin\src\pug\pages\layout-sidenav-light.pug" />
-    <Content Include="Assets\Admin\src\pug\pages\layout-static.pug" />
-    <Content Include="Assets\Admin\src\pug\pages\login.pug" />
-    <Content Include="Assets\Admin\src\pug\pages\password.pug" />
-    <Content Include="Assets\Admin\src\pug\pages\register.pug" />
-    <Content Include="Assets\Admin\src\pug\pages\tables.pug" />
-    <Content Include="Assets\Admin\src\scss\layout\_authentication.scss" />
-    <Content Include="Assets\Admin\src\scss\layout\_dashboard-default.scss" />
-    <Content Include="Assets\Admin\src\scss\layout\_dashboard-fixed.scss" />
-    <Content Include="Assets\Admin\src\scss\layout\_error.scss" />
-    <Content Include="Assets\Admin\src\scss\navigation\sidenav\_sidenav-dark.scss" />
-    <Content Include="Assets\Admin\src\scss\navigation\sidenav\_sidenav-light.scss" />
-    <Content Include="Assets\Admin\src\scss\navigation\sidenav\_sidenav.scss" />
-    <Content Include="Assets\Admin\src\scss\navigation\_nav.scss" />
-    <Content Include="Assets\Admin\src\scss\navigation\_topnav.scss" />
-    <Content Include="Assets\Admin\src\scss\styles.scss" />
-    <Content Include="Assets\Admin\src\scss\variables\_navigation.scss" />
-    <Content Include="Assets\Admin\src\scss\variables\_spacing.scss" />
-    <Content Include="Assets\Admin\src\scss\_global.scss" />
-    <Content Include="Assets\Admin\src\scss\_variables.scss" />
-    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
-    <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\Shared\_Nav.cshtml" />
-    <Content Include="Areas\Admin\Views\Shared\_Sidebar.cshtml" />
+    <Content Include="Areas\Admin\Views\Login\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_Footer.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_Nav.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_Script.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_Sidebar.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_Style.cshtml" />
-    <Content Include="Areas\Admin\Views\Home\error404.cshtml" />
-    <Content Include="Areas\Admin\Views\Home\error500.cshtml" />
+    <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
     <Content Include="Assets\Client\App_Themes\assets\plugins\font-awesome\font-awesome-4.7.0.zip" />
     <Content Include="Assets\Client\App_Themes\assets\plugins\font-awesome\fonts\fontawesome-webfont.eot" />
     <Content Include="Assets\Client\App_Themes\assets\plugins\font-awesome\fonts\fontawesome-webfont.ttf" />
@@ -490,6 +417,8 @@
     <Content Include="Assets\Client\App_Themes\assets\plugins\font-awesome\scss\_stacked.scss" />
     <Content Include="Assets\Client\App_Themes\assets\plugins\font-awesome\scss\_variables.scss" />
     <Content Include="Assets\Client\App_Themes\assets\plugins\OwlCarousel2-2.3.4.zip" />
+    <Content Include="Assets\Client\App_Themes\assets\plugins\OwlCarousel\.gitattributes" />
+    <Content Include="Assets\Client\App_Themes\assets\plugins\OwlCarousel\.gitignore" />
     <Content Include="Assets\Client\App_Themes\assets\plugins\OwlCarousel\.travis.yml" />
     <Content Include="Assets\Client\App_Themes\assets\plugins\OwlCarousel\bower.json" />
     <Content Include="Assets\Client\App_Themes\assets\plugins\OwlCarousel\CONTRIBUTING.md" />
@@ -607,19 +536,17 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
     <Content Include="Views\Shared\_Head.cshtml" />
     <Content Include="Views\Shared\_Header.cshtml" />
-    <Content Include="Views\Shared\_Slider.cshtml" />
-    <Content Include="Views\Shared\_ServiceBlock.cshtml" />
-    <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Shared\_Script.cshtml" />
-    <Content Include="Views\Test\Index.cshtml" />
+    <Content Include="Views\Shared\_ServiceBlock.cshtml" />
+    <Content Include="Views\Shared\_Slider.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -627,17 +554,16 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\bootstrap.min.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap-theme.min.css.map" />
-    <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj">
-      <Project>{d61e5a76-970c-4cfa-90b1-a2631fad8b7b}</Project>
+      <Project>{bf6f8095-c132-464c-a387-f2533fc458fb}</Project>
       <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>

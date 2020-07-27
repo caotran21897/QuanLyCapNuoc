@@ -25,16 +25,21 @@ namespace Model.DAO
         {
             return db.NhanViens.SingleOrDefault(x => x.nv_tendangnhap == username);
         }
-        public bool Login(string username, string password)
+        public int Login(string username, string password)
         {
-            var result = db.NhanViens.Count(x => x.nv_tendangnhap == username && x.nv_matkhau == password);
-            if (result > 0)
+            var result = db.NhanViens.SingleOrDefault(x => x.nv_tendangnhap == username );
+            if (result == null)
             {
-                return true;
+                return 0;
             }
             else
             {
-                return false;
+                if (result.nv_matkhau == password)
+                {
+                    return 1;
+                }
+                else
+                    return -2;
             }
         }
     }

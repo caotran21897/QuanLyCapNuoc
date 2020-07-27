@@ -168,5 +168,3 @@ D:\QuanLyCapNuoc\QuanLyCapNuoc\QuanLyCapNuoc\obj\Debug\QuanLyCapNuoc.dll
 D:\QuanLyCapNuoc\QuanLyCapNuoc\QuanLyCapNuoc\obj\Debug\QuanLyCapNuoc.pdb
 D:\QuanLyCapNuoc\QuanLyCapNuoc\QuanLyCapNuoc\bin\EntityFramework.SqlServer.dll
 D:\QuanLyCapNuoc\QuanLyCapNuoc\QuanLyCapNuoc\bin\EntityFramework.SqlServer.xml
-C:\Users\kalah\OneDrive\Documents\GitHub\QuanLyCapNuoc\QuanLyCapNuoc\QuanLyCapNuoc\bin\EntityFramework.SqlServer.dll
-C:\Users\kalah\OneDrive\Documents\GitHub\QuanLyCapNuoc\QuanLyCapNuoc\QuanLyCapNuoc\bin\EntityFramework.SqlServer.xml

@@ -22,8 +22,8 @@ namespace QuanLyCapNuoc.Areas.Admin.Controllers
             if (ModelState.IsValid)
             {
                 var dao = new UserDao();
-                var result = dao.Login(model.nv_tendangnhap, model.nv_matkhau);
-                if (result)
+                var result = dao.Login(model.nv_tendangnhap, Encrypter.MD5Hash(model.nv_matkhau));
+                if (result == 1)
                 {
                     var user = dao.GetByID(model.nv_tendangnhap);
                     var nvSession = new UserLogin();
@@ -32,10 +32,16 @@ namespace QuanLyCapNuoc.Areas.Admin.Controllers
                     Session.Add(CommonConstants.NV_SESSION, nvSession);
                     return RedirectToAction("Index", "Home");
                 }
-                else
+                else if (result == 0)
                 {
-                    ModelState.AddModelError("", "đăng nhập không đúng");
+                    ModelState.AddModelError("", "Tài khoản không tồn tại");
                 }
+                else if (result == -2)
+                {
+                    ModelState.AddModelError("", "Mật khẩu không đúng");
+                }
+                else
+                    ModelState.AddModelError("", "Đăng nhập không thành công");
             }
             return View("Index");
         }

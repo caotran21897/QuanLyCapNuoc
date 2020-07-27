@@ -13,7 +13,8 @@
     <meta name="author" content="" />
     <title>Dashboard - SB Admin</title>
     @RenderPage("_Style.cshtml")
-    @RenderSection("Style", required: false)
+    @RenderSection("style", required: false)
+
 </head>
 <body class="sb-nav-fixed">
     @RenderPage("_Nav.cshtml")
@@ -22,6 +23,7 @@
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid">
+                    <h1 class="mt-4"> @RenderSection("header", required: true)</h1>
                     @RenderBody()
                 </div>
             </main>
