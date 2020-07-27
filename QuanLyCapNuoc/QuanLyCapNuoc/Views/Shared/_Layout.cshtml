@@ -1,42 +1,75 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
-</head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
+﻿
+@{
+    Layout = null;
+}
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    @RenderPage("_Head.cshtml")
+
+</head>
+
+<body class="header-fixed header-fixed-space">
+    <form method="post" action="./" id="aspnetForm">
+        <div class="aspNetHidden">
+            <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+            <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+        </div>
+    </form>
+    <script type="text/javascript">
+        //<![CDATA[
+        var theForm = document.forms['aspnetForm'];
+        if (!theForm) {
+            theForm = document.aspnetForm;
+        }
+        function __doPostBack(eventTarget, eventArgument) {
+            if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                theForm.__EVENTTARGET.value = eventTarget;
+                theForm.__EVENTARGUMENT.value = eventArgument;
+                theForm.submit();
+            }
+        }
+                    //]]>
+    </script>
+
+
+    <script src="~/Assets/Client/App_Themes/assets/WebResource.axd" type="text/javascript"></script>
+
+    <div class="aspNetHidden">
+
+        <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+        <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+               value="/wEdAAMPZGFRd4lzbowGl0Ebwdd/TZFNVvBVKfJ7T2aVRQWnAHOA3UaRLq+KRl/UAwmjtbC4U9Cvbgc61IHW4skYM3ug2EBQ7N/SkXcY8AGANfnDtw==" />
+    </div>
+    <div class="wrapper page-option-v1">
+        <!--=== Header ===-->
+        @RenderPage("_Header.cshtml")
+        <!--=== End Header ===-->
+        <!--=== Slider ===-->
+        @RenderPage("_Slider.cshtml")
+        <!--=== End Slider ===-->
+        <!--=== Service Block ===-->
+        @RenderPage("_ServiceBlock.cshtml")
+        <!--=== End Service Block ===-->
+        <!--=== Main content ===-->
+        @RenderBody()
+        <!--=== End main content ===-->
+        <!--=== Chỉ dẫn cho người dùng nước ===-->
+        <!--/container-->
+        <!--=== End Chỉ dẫn cho người dùng nước  ===-->
+        <!--=== Footer Version 1 ===-->
+        @RenderPage("_Footer.cshtml")
+        <!--=== End Footer Version 1 ===-->
+    </div>
+    <!--/wrapper-->
+
+    @RenderPage("_Script.cshtml")
 </body>
+
 </html>
